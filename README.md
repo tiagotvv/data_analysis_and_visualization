@@ -79,7 +79,11 @@ Tableau link: https://public.tableau.com/app/profile/tiago.vinhoza/viz/2019UKEle
 
 #### 6.1 Portugal
 
-Hospitalized patients versus number of active cases in Portugal.
+Hospitalized patients (total and ICU) versus number of active cases in Portugal.
+
+<img src="hosp_active.jpg" alt="drawing" width="800"/>
+<img src="hospICU_active.jpg" alt="drawing" width="800"/>
+
 
 Data collected from: Data Science for Social Good Portugal: https://github.com/dssg-pt/covid19pt-data
 
