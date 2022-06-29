@@ -16,7 +16,12 @@ Tableau link: https://public.tableau.com/app/profile/tiago.vinhoza/viz/GasolineP
 
 ### 2. Misery Index in Portugal (1985-2017)
 
-I created a connected scatterplot using unemployment and inflation data from Portugal. The farther a point is from the origin, the larger is the misery index (sum of the unemployment and inflation rates). We can see that after the 2009-2011 crisis, the misery index was the same as in the early 90s, but high unemployment was the problem, not high inflation.
+I created a connected scatterplot using unemployment and inflation data from Portugal. The farther a point is from the origin, the larger is the misery index (sum of the unemployment and inflation rates). To add more information to the plot, I chose to encode in the color of the line connecting the dots the information about the party in power during that period of time.
+
+We can see that after the 2009-2011 crisis, the misery index was the same as in the early 90s, but high unemployment was the problem, not high inflation.
+
+<img src="misery_indexPT.jpg" alt="Portugal Misery Index" width="800"/>
+
 
 ### 3. 2016 US presidential election exit poll breakdown 
 
@@ -56,7 +61,7 @@ Some insights that can be taken from the visualization:
 A visualization where each of the 650 constituencies in place for the 2019 general election are described in terms of their competitiveness and their Brexit status
 
 The seat competitiveness was defined in terms of the 2017 election majority:
-* competitive: majority less than 5%
+* battleground: majority less than 5%
 * leaning to incumbent: majority between 5% and 10%
 * fairly safe: majority between 10% and 20%
 * safe: majority greater than 20%.
@@ -72,6 +77,8 @@ The visualization has two tabs, one showing the status at dissolution and the ot
 
 <img src="2019UK_post_election.png" alt="drawing"/>
 
+In the interactive version, hovering over each constituency shows a tooltip that reveals information such as: name, winning party and majority in 2017, leave majority in 2016, seat competiveness, Brexit status, open seat (yes/no).
+
 Tableau link: https://public.tableau.com/app/profile/tiago.vinhoza/viz/2019UKElectionResults/Post-Election
 
 
@@ -79,12 +86,61 @@ Tableau link: https://public.tableau.com/app/profile/tiago.vinhoza/viz/2019UKEle
 
 #### 6.1 Portugal
 
-Hospitalized patients (total and ICU) versus number of active cases in Portugal.
+Covid-19 Dashboard: Using streamlit, I created a web app to display and analyze COVID-19 data from Portugal. The Data Science for Social Good initiative fetched the data from the health authorities on a daily basis. I used the files from their repository and made the analysis.
 
-<img src="hosp_active.jpg" alt="drawing" width="800"/>
-<img src="hospICU_active.jpg" alt="drawing" width="800"/>
+Link to streamlit app: https://share.streamlit.io/tiagotvv/covid19pt/main/CovidPT.py
+
+<img src="dashboard_screenshot.png" alt="drawing"/>
+
+The app is hosted in another repository of mine- More details about all the information displayed on the dashboard can be found there.
+Link to GitHub repo: https://github.com/tiagotvv/covid19pt/
+
+
+From these data, it is also possible to create insightful plots and animations. In this one, which shows hospitalized patients (total and ICU) versus number of active cases in Portugal, it is possible to see all the 'waves' and the burden they caused on the hospitals.
+
+<img src="hosp_active.jpg" alt="drawing" width="600"/>
+<img src="hospICU_active.jpg" alt="drawing" width="600"/>
 
 
 Data collected from: Data Science for Social Good Portugal: https://github.com/dssg-pt/covid19pt-data
 
 Link to animation (from March 16, 2020 to Dec 30, 2021): https://twitter.com/tiagotvv/status/1476622702932865030
+
+
+#### 6.2 Brazil
+
+The official government data collected at https://covid.saude.gov.br is well structured and organized. It is possible to analyze the data on a national, regional, state, municipal level. It is also possible to analyze the data in terms of health regions (defined by the Ministry of Health). Below I show the results of some of the queries that can be performed on the dataset.
+
+* State level analysis: Heatmap showing the number of deaths per 1 million (cumulative in 14 days) for each state during a 9-month span (July 4, 2020 - April 3, 2021)
+
+<img src="brazil_covid_heatmap.png" alt="drawing"/>
+
+* Municipal level queries: Cumulative case and death incidence per 100,000 as of February 2, 2022.
+
+<img src="brazil_cities.png" alt="drawing" width="800"/>
+
+* Health region level queries: Cumulative case and death incidence per 100,000 as of February 2, 2022. In this case it was possible to link to other Ministry of Health databases (https://datasus.saude.gov.br/) and join to the Covid-19 data, information such as number of hospital beds (general and ICU) of each health region.
+
+<img src="brazil_healthreg.png" alt="drawing" width="800"/>
+
+### 7. What Policymakers know about Women and Girl Issues
+
+This was part of a Makeover Monday challenge: https://www.makeovermonday.co.uk/week10-2018/. A very interesting one, indeed. It was fascinating to see that the policymakers sometimes have no idea about the issues they are tackling. 
+
+Since I wanted to focus on the accuracy aspect of the policymakers, I decided to use a target-style visualization where the distance from the center of the target encodes the information about how accurate (inaccurate) was the estimate by the policy maker. I used the symmetric percentage error to give roughly the same weight to under/overestimates. After defining the distance from the origin, the angle was randomly selected between 0 and 360 degrees to position the marker. I used color to convey the information of how many under/over estimations were made.
+
+<img src="policy_issues.png" alt="drawing"/>
+
+Link to interactive dashboard: https://community.powerbi.com/t5/Data-Stories-Gallery/What-Policymakers-know-about-Women-and-Girl-Issues/m-p/372621
+
+### 8. Diagnostic test concepts
+
+I used square area graphs to show diagnostic test concepts such as sensitivity, specificity, positive predictive value (PPV), false omission rate (FOR), true/false positives, true/false negatives, prevalence.
+
+<img src="diagnostic1.jpg" alt="drawing"/>
+
+<img src="diagnostic2.jpg" alt="drawing"/>
+
+<img src="diagnostic3.jpg" alt="drawing"/>
+
+
