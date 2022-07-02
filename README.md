@@ -86,13 +86,14 @@ Tableau link: https://public.tableau.com/app/profile/tiago.vinhoza/viz/2019UKEle
 
 #### 6.1 Portugal
 
-Covid-19 Dashboard: Using streamlit, I created a web app to display and analyze COVID-19 data from Portugal. The Data Science for Social Good initiative fetched the data from the health authorities on a daily basis. I used the files from their repository and made the analysis.
+#### Covid-19 Dashboard
+Using streamlit, I created a web app to display and analyze COVID-19 data from Portugal. The Data Science for Social Good initiative fetched the data from the health authorities on a daily basis. I used the files from their repository and made the analysis.
 
 Link to streamlit app: https://share.streamlit.io/tiagotvv/covid19pt/main/CovidPT.py
 
 <img src="dashboard_screenshot.png" alt="drawing"/>
 
-The app is hosted in another repository of mine- More details about all the information displayed on the dashboard can be found there.
+The app is hosted in another repository of mine. More details about all the information displayed on the dashboard can be found there.
 Link to GitHub repo: https://github.com/tiagotvv/covid19pt/
 
 
@@ -105,6 +106,21 @@ From these data, it is also possible to create insightful plots and animations. 
 Data collected from: Data Science for Social Good Portugal: https://github.com/dssg-pt/covid19pt-data
 
 Link to animation (from March 16, 2020 to Dec 30, 2021): https://twitter.com/tiagotvv/status/1476622702932865030
+
+#### Effect of COVID-19 in the overall mortality
+
+All-cause mortality data from Portugal in 2020 e 2021 is comparted to the 2009-2019 period. The data, collected from the Mortality Surveillance Electronic System, shows above average number of deaths staring in March of 2020 and peaking in early 2021.   
+
+<img src="portugal_mortality.png" alt="drawing" width = "600"/>
+
+Source of mortality data: https://evm.min-saude.pt/
+
+A small animation show the methodology to create the figure above: 
+a) start with 2009-2019 data. 
+b) take their mean and 25th and 75th percentile values for each day of the uear. 
+c) plot 2020 and 2021 data on top of that.
+
+Link to animation: https://www.linkedin.com/posts/tiago-vinhoza_a-mortalidade-em-portugal-nos-anos-de-2020-activity-6891347024567234560-9Kc2?utm_source=linkedin_share&utm_medium=member_desktop_web
 
 
 #### 6.2 Brazil
