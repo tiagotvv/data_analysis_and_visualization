@@ -40,6 +40,7 @@ This runoff simulator that I prepared in tableau starts with the results from th
 
 <img src="brazil_runoff_simulator.png" alt="runoff" width="600"/>
 
+Tableau link: https://public.tableau.com/app/profile/tiago.vinhoza/viz/Simulador-2oTurno-Brasil2018/Dashboard1
 
 #### 4.2 State-by-state results
 
