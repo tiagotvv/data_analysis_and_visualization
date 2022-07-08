@@ -160,4 +160,12 @@ I used square area graphs to show diagnostic test concepts such as sensitivity, 
 
 <img src="diagnostic3.jpg" alt="drawing"/>
 
+### 9. FIDE Candidates Tournament 2022
+
+Review of the 2022 FIDE Candidates tournament games using a streamlit app. A PGN file was downloaded from https://lichess.org/ and parsed to generate CSV files that contains information about the 56 games played during the tournament.
+
+More details in the GitHub repo: https://github.com/tiagotvv/fide_candidates
+
+Link to app: https://share.streamlit.io/tiagotvv/fide_candidates/main/candidates.py
+
 
